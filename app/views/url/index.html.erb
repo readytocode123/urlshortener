@@ -1,0 +1,13 @@
+<h1>Url#index</h1>
+<p>Find me in app/views/url/index.html.erb</p>
+ <!--              this url is a rails thing! -->
+<%= form_for @url, url: url_create_path do |f| %>
+<!--             this one is not a rails thing this one refers to the url in schema-->
+<%= f.text_field :url %>
+<%= f.submit %>
+
+<% end %>
+
+ <% if params[:id] %>
+ <%= url_url(params[:id]) %>
+ <% end %>
