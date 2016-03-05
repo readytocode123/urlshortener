@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'url/show/:id' => 'url#show',as: 'url'
+  get ':id' => 'url#show',as: 'url'
 
   # get 'short_url/home'
 
